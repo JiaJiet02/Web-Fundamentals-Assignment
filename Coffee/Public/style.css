@@ -3,17 +3,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 ul {
     list-style: none;
 }
 
-a{
+a {
+    color: #b6846b;
     text-decoration: none;
 }
 
-.navbar .nav-links:hover {
+.navbar .nav:hover {
+    background-color: #ddd;
     color: black;
   }
 
@@ -46,6 +49,11 @@ a{
 .nav-links li {
     margin: 0 30px;
 
+}
+
+a:hover {
+    color: #854a0c;
+    transition: all 0.4s ease;
 }
 
 header {
@@ -100,65 +108,37 @@ header {
     display: none;
 }
 
-/* Explore */
-section {
-    width: 80%;
-    margin: 80px auto;
-}
-
-.title{
-    text-align: center;
-    font-size: 4vmin;
-    color:grey;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    
-}
-
-.row .col  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.explore {
-
-    background-image: url(./IMG/explorebg.jpg);
-    background-position: center;
+body {
+    background-image: url('./img/coffebody-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    height: 100%
-    align-items: flex-end;
-    justify-content: center;
 }
 
-.explore .row {
-    margin-top: 50px;
+.aboutcoffee {
+    margin-top: 60px;
+    color: rgb(221, 221, 221);
 }
 
-h4 {
-    font-size: 3vmin;
-    color: grey;
-    margin: 20px auto;
+.aboutcoffee p {
+    margin-top: 15px;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+    line-height: 130%;
+    font-size: 1.2em;
 }
 
-p {
-    color: grey;
-    padding: 0px 40;
-}
-
-.explore .ctn{
+.aboutcoffee h2{
     margin-top: 30px;
+    text-align: center;
+    text-decoration: underline;
 }
 
-.history {
-    width: 100%;
-    heightL 80vh;
-    background-image:
+.aboutcoffee img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 /* Mobile device setting */
@@ -193,5 +173,9 @@ p {
 
     .nav-links li {
         margin: 30px auto;
+    }
+
+    .aboutcoffee {
+        margin-top: 80px
     }
 }
