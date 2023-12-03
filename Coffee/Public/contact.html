@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>About Coffee</title>
     <!-- This is for CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+        <!-- This is for the Navigation Bar -->
+        <nav class="navbar">
+            <h1 class="logo">
+                <img src="./IMG/coffee-beans.png" width="45px" >    
+            </h1>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="aboutcoffee.html">About Coffee</a></li>
+                <li><a href="coffeetypes.html">Coffee Types</a></li>
+                <li><a href="brewingmethods.html">Brewing Methods</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li class="ctn"><a href="signup.html">Sign Up</a></li>
+            </ul>
+            <img src="./IMG/menu-btn.png" alt="" class="menu-btn">
+        </nav>
+    <main>
+    <form onsubmit="return message()" class="contactus">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>    
+                <td>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="feedback">Feedback:</label>
+                </td>
+                <td>
+                    <textarea id="feedback" placeholder="Feedback, contact and review."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src ="./JS/mobilescript.js"></script>
+    </body>
+    </html>

@@ -28,7 +28,7 @@ a {
 
 /* This is for the NavBar */
 .navbar {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     display: flex;
@@ -37,7 +37,7 @@ a {
     justify-content: space-between;
     padding: 20px;
     color: whitesmoke;
-    background-color: #201203b8;
+    background-color: #201203;
 
 }
 
@@ -57,7 +57,7 @@ a:hover {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url('./IMG/coffeeheader-bg.jpg');
     background-position: center bottom;
@@ -116,7 +116,7 @@ body {
 }
 
 .aboutcoffee {
-    margin-top: 60px;
+    margin-top: 0px;
     color: rgb(221, 221, 221);
 }
 
@@ -130,7 +130,8 @@ body {
 }
 
 .aboutcoffee h2{
-    margin-top: 30px;
+    margin-top: 25
+    px;
     text-align: center;
     text-decoration: underline;
 }
@@ -141,6 +142,108 @@ body {
     margin-top: 20px;
 }
 
+.contactus {
+    margin-top: 20%;
+    display: block;
+    margin: 20% 40%;
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+
+.site-footer
+{
+  background-color:#201203;
+  padding:10px 0 0px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.abouttext{
+    margin-left: 1%;
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  margin-left: 1%;
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#854a0c;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:1%;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#854a0c;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:1%;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0;
+  margin-left: 1%
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
 /* Mobile device setting */
 @media only screen and (max-width: 850px){
     .menu-btn{
@@ -149,7 +252,7 @@ body {
 
     .navbar {
         padding: 0;
-        height: 13%;
+        height: 0px;
     }
     .logo {
         position: absolute;
@@ -165,6 +268,7 @@ body {
         margin-top: -900px;
         transition: all 0.5s ease;
     }
+    
 
     .mobile-menu {
         margin-top: 0px;
