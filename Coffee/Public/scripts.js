@@ -5,3 +5,7 @@ menu.addEventListener('click', function(){
     menu.classList.toggle('is-active');
     menuLinks.toggle('active');
 })
+
+function feedbackmessage() {
+    alert("Feedback submitted!");
+}

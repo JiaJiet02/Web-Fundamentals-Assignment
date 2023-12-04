@@ -15,7 +15,7 @@
                 <img src="./IMG/coffee-beans.png" width="45px" >    
             </h1>
             <ul class="nav-links">
-                <li><a href="main.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="aboutcoffee.html">About Coffee</a></li>
                 <li><a href="coffeetypes.html">Coffee Types</a></li>
                 <li><a href="brewingmethods.html">Brewing Methods</a></li>
@@ -31,7 +31,7 @@
         </p>
 <section class="contactbody">
     <div class="container">
-        <form class="form" onsubmit="return message()">
+        <form action="connect.php" method="POST" class="form" onsubmit="return feedbackmessage()">
             <div class="form-group">
                 <label for="name" class="form-label">Your Name</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" tabindex="1" required>
@@ -56,7 +56,7 @@
 
     </div>
 </section>
-    <script src ="./JS/mobilescript.js"></script>
+    <script src ="./scripts.js"></script>
     </body>
   <!-- Site footer -->
   <footer class="site-footer">

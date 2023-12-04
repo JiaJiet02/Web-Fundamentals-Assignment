@@ -1,19 +1,22 @@
 <?php
 
-$_POST
-
+$_POST;
+header("Location: ".$_SERVER['HTTP_REFERER']);
 $userName = $_POST['name'];
 $userEmail = $_POST['email'];
 $messageSubject = $_POST['subject'];
 $message = $_POST['message'];
 
-$to = "ljiajiet@gmail.com";
-$body = "";
+$text = '-- START ' . date('c') . " --\n"
+. "User email:{$userEmail}\n" 
+. "User name: {$userName}\n"
+. "Message:\n"
+. "{$messageSubject}\n"
+. "{$message}\n";
 
-$body .="From: ".$userName. "\r\n";
-$body .="Email: ".$userEmail. "\r\n";
-$body .="Message: ".$message. "\r\n";
-
-mail($to, $messgaeSubject, $body);
-
+$handle = 'C:\xampp\htdocs\test.txt';
+$file = fopen($handle, "a") or die("can't open file");
+fwrite($file, $text);
+fclose($file);
+exit;
 ?>

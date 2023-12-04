@@ -266,7 +266,7 @@ body {
   display:flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 77vh;
 }
 
 .container {
@@ -321,10 +321,10 @@ body {
 .contactbtn {
   background: 0 0 #fff;
   border: 1px solid #aaa;
-  border-radius: 3px;
+  border-radius: 10px;
   color: black;
   font-size: 1em;
-  padding: 10 50px; /* not working */
+  padding: 10px 5%;
   text-transform: uppercase;
 }
 
@@ -333,6 +333,7 @@ body {
   color: whitesmoke;
   background-color: #854a0c;
   transition: 0.4s;
+  transform: scale(1.1, 1.1)
 }
 
 textarea{
