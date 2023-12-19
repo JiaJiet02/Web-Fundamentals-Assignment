@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Coffee</title>
+    <!-- This is for CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <!-- This is for the Navigation Bar -->
+        <nav class="navbar">
+            <h1 class="logo">
+                <img src="./IMG/coffee-beans.png" width="45px" >    
+            </h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutcoffee.html">About Coffee</a></li>
+                <li><a href="coffeetypes.html">Coffee Types</a></li>
+                <li><a href="brewingmethods.html">Brewing Methods</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li class="ctn" class="active"><a href="login.html">Login</a></li>
+            </ul>
+            <img src="./IMG/menu-btn.png" alt="" class="menu-btn">
+        </nav>
+
+    </main>
+
+    <main class="regpage">
+        <h1 class="regtitle">Login</h1>
+        <p class="regcontent">
+            Log in to customize what emails you want from us! 
+        </p>    
+        <section class="contactbody">
+            <div class="container">
+                <form  id="regform" class="form"  onsubmit="return validateLogin()">
+                    <div id="loginemail" class="form-group">
+                        <label for="loginemail" class="form-label">Your Name</label>
+                        <input name="loginemail" type="email" class="form-control" id="name" placeholder="John Doe" tabindex="1" required>
+                    </div>
+                    <div id="loginpass" class="form-group">
+                        <label for="loginpass" class="form-label">Your Password</label>
+                        <input name="loginpass" type="password" class="form-control" id="loginpass" placeholder="password" tabindex="2" required>
+                    </div>
+                    <div>
+                        <button class="contactbtn" value="Login" type="submit">Login!</button>
+                    </div>
+        
+                </form>
+        
+            </div>
+        </section>
+    </main>
+
+    </div>
+    </section>
+    <script src ="./JS/mobilescript.js"></script>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <h6>About</h6>
+    <p class="abouttext">This website was created for the purpose of Liew Jia Jiet's Web Fundamental assignment. The goal of this web page is to present information about coffee in an accessible manner.</p>
+    <h6>Quick Links</h6>
+    <ul class="footer-links">
+    <li><a href="main.html">Home</a></li>
+    <li><a href="aboutcoffee.html">About Coffee</a></li>
+    <li><a href="coffeetypes.html">Coffee Types</a></li>
+    <li><a href="brewingmethods.html">Brewing Methods</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+    <li><a href="login.html">Login</a></li>
+    </ul>
+    <h6>Page Data</h6>
+    <ul class="footer-links">
+      <li>Page Created: November 25, 2023</li>
+      <li>Page Last Updated: </li>
+      <li>Data Collection Date: </li>
+    </ul>
+<hr>
+    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+ <a href="#">Liew Jia Jiet</a>.
+    </p>
+</footer>
+<html>

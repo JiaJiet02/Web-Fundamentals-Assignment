@@ -5,26 +5,52 @@ menuBtn.addEventListener('click', ()=>{
     navlinks.classList.toggle('mobile-menu')
 })
 
-function register() {
-    var email= document.getElementById("email").value;
-    var password= document.getElementById("password").value;
-
-    alert("Registered successfully!");
+function feedbackmessage() {
+    alert("Feedback submitted!");
 }
 
-function login() {
-    var email= document.getElementById("email").value;
-    var password= document.getElementById("password").value;
+function validateRegistration() {
+    const regist = document.forms["regform"];
+    var lowerCaseLetters = /[a-z]/g;
+    var upperCaseLetters = /[A-Z]/g;
+    var numbers = /[0-9]/g;
 
-    alert("Login successful!");
+    if(!regist['registerpass'].value.match(lowerCaseLetters)){
+      alert ("No lowercase letters in your password!");
+      return false;
+    }
+    if(!regist['registerpass'].value.match(upperCaseLetters)){
+      alert ("No uppercase letters in your password!");
+      return false;
+    }
+    if(regist['registerpass'].value.match(numbers) === false){
+      alert ("No numbers in your password!");
+      return false;
+    }
+    if(regist['registerpass'].value.length <= 7) {
+      alert("Password not long enough!");
+      return false;
+    }
+    if (regist['registerpass'].value != regist['registerpassconfirm'].value) {
+      alert("Passwords must be the same!");
+      return false;
+    }
+    alert("Successfully registered as " + regist['registerusername'].value);
+    window.location.replace("valid.html");
+    window.location.href = "valid.html";
+    event.preventDefault()
+    return false;
+
+  } 
+
+
+function validateLogin() {
+    var email= document.getElementById("loginemail").value;
+    var password= document.getElementById("loginpass").value;
+
+    alert("Successfully logged in!");
+    window.location.replace("valid.html");
+    window.location.href = "valid.html";
+    event.preventDefault()
+    return false;
 }
-
-function message() {
-    var name= document.getElementById("name").value;
-    var email= document.getElementById("email").value;
-    var subject= document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
-
-    alert("Submitted successfully!");
-}
-
